@@ -1,0 +1,110 @@
+/* css/styles.css */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    color: #2d3436;
+    line-height: 1.6;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #1e272e 0%, #2d3436 100%);
+    color: white;
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.foto-perfil {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid rgba(255,255,255,0.25);
+    margin-bottom: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+header h1 { font-size: 2.8rem; margin-bottom: 8px; }
+.titulo { font-size: 1.4rem; opacity: 0.9; margin-bottom: 20px; }
+.contacto a { color: #74b9ff; text-decoration: none; }
+.contacto span { margin: 0 12px; }
+
+/* MAIN */
+main { padding: 45px 60px; }
+section { margin-bottom: 40px; }
+h2 {
+    color: #1e272e;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #74b9ff;
+    display: inline-block;
+}
+
+ul { list-style: none; }
+li {
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 25px;
+}
+li:before {
+    content: "▹";
+    color: #74b9ff;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+strong { color: #1e272e; font-size: 1.1rem; }
+em { color: #636e72; font-size: 0.95rem; }
+
+/* HABILIDADES */
+.habilidades ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 10px;
+}
+.habilidades li {
+    background: #e3f2fd;
+    color: #1565c0;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 0;
+    padding-left: 18px;
+}
+.habilidades li:before { content: none; }
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e272e;
+    color: #ddd;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    main { padding: 30px 25px; }
+    header h1 { font-size: 2.3rem; }
+}
+
+@media print {
+    body { background: white; padding: 0; }
+    .container { box-shadow: none; border-radius: 0; }
+}
